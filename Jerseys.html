@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBA Jerseys</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <span class="site-title">NBA Fan Store</span>
+      <span class="menu-toggle" id="menuToggle">☰</span>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="jerseys.html" class="active">NBA JERSEYS</a></li>
+          <li><a href="caps.html">NBA CAPS</a></li>
+          <li><a href="shoes.html">NBA SHOES</a></li>
+        </ul>
+      </nav>
+      <div style="clear:both"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>NBA Jerseys</h1>
+      <p>Replica, swingman, and limited edition jerseys. Choose team and player.</p>
+    </section>
+
+    <section>
+      <div class="grid">
+        <!-- sample item -->
+        <article class="card">
+          <img src="images/jersey-sample.jpg" alt="Jersey sample">
+          <h3>Laker Replica Jersey</h3>
+          <p>$79.99 — Available sizes S–XXL</p>
+        </article>
+        <!-- duplicate or add more -->
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> NBA Fan Store — Project for class</p>
+    </footer>
+  </main>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  const toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

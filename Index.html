@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBA Shop — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <span class="site-title">NBA Fan Store</span>
+      <span class="menu-toggle" id="menuToggle">☰</span>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="jerseys.html">NBA JERSEYS</a></li>
+          <li><a href="caps.html">NBA CAPS</a></li>
+          <li><a href="shoes.html">NBA SHOES</a></li>
+        </ul>
+      </nav>
+      <div style="clear:both"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to the NBA Fan Store</h1>
+      <p>Official-looking jerseys, caps, and shoes — perfect for game day or everyday streetwear.</p>
+    </section>
+
+    <section>
+      <h2 style="margin-top:18px;">Featured</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="images/jersey-sample.jpg" alt="Sample jersey">
+          <h3>Player Replica Jersey</h3>
+          <p>High quality fan replica. Sizes S–XXL.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/cap-sample.jpg" alt="Sample cap">
+          <h3>Team Snapback Cap</h3>
+          <p>Structured snapback with embroidered logo.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/shoe-sample.jpg" alt="Sample shoes">
+          <h3>Signature Sneaker</h3>
+          <p>Lightweight court shoe inspired by pro models.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> NBA Fan Store — Project for class</p>
+    </footer>
+  </main>
+
+<script>
+  // small script for menu toggle & year
+  const nav = document.getElementById('mainNav');
+  const toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
+
+

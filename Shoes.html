@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NBA Shoes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <span class="site-title">NBA Fan Store</span>
+      <span class="menu-toggle" id="menuToggle">☰</span>
+      <nav id="mainNav">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="jerseys.html">NBA JERSEYS</a></li>
+          <li><a href="caps.html">NBA CAPS</a></li>
+          <li><a href="shoes.html" class="active">NBA SHOES</a></li>
+        </ul>
+      </nav>
+      <div style="clear:both"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>NBA Shoes</h1>
+      <p>Step up your game with the latest basketball sneakers inspired by your favorite NBA stars.</p>
+    </section>
+
+    <section>
+      <div class="grid">
+        <article class="card">
+          <img src="images/shoe-sample.jpg" alt="Air Dunk Pro">
+          <h3>Air Dunk Pro</h3>
+          <p>$119.99 — Lightweight and responsive, ideal for quick moves on court.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/shoe2.jpg" alt="Court Vision Mid">
+          <h3>Court Vision Mid</h3>
+          <p>$109.99 — Classic mid-cut with cushioned sole and ankle support.</p>
+        </article>
+
+        <article class="card">
+          <img src="images/shoe3.jpg" alt="Street Crossover">
+          <h3>Street Crossover</h3>
+          <p>$99.99 — Durable streetwear sneaker inspired by pro performance.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> NBA Fan Store — Project for class</p>
+    </footer>
+  </main>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  const toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
