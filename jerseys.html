@@ -48,3 +48,38 @@
 
         <article class="card">
           <img src="images/jersey3.jpg" alt="Celtics Swingman Jersey">
+          <h3>Celtics Swingman Jersey</h3>
+          <p>Price: $89.99</p>
+          <p>Sizes: S–XXL | Material: Lightweight knit | Player name & number embroidery</p>
+        </article>
+
+        <article class="card">
+          <img src="images/jersey4.jpg" alt="Bulls Limited Edition Jersey">
+          <h3>Bulls Limited Edition Jersey</h3>
+          <p>Price: $119.99</p>
+          <p>Sizes: S–XXL | Material: Premium fabric | Limited edition design</p>
+        </article>
+
+        <article class="card">
+          <img src="images/jersey5.jpg" alt="Warriors Replica Jersey">
+          <h3>Warriors Replica Jersey</h3>
+          <p>Price: $79.99</p>
+          <p>Sizes: S–XXL | Material: Breathable mesh | Official-looking colors</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> NBA Fan Store — Project for class</p>
+      <p style="font-size:0.9em;">All products are inspired by NBA merchandise; not officially licensed.</p>
+    </footer>
+  </main>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  const toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
