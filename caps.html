@@ -29,17 +29,57 @@
       <p>Show your team pride with stylish NBA caps and beanies — perfect for game day or casual wear.</p>
     </section>
 
+    <!-- About / Content & Context Section -->
+    <section id="about" style="padding: 20px; background-color: #f9f9f9; text-align: center;">
+      <h2>About NBA Caps</h2>
+      <p>Find a wide selection of official-looking NBA caps and beanies. Perfect for showing off your team pride at games, on the street, or casually every day.</p>
+      <p>Browse our adjustable fits, flat brims, and a variety of team colors to match your style!</p>
+    </section>
+
+    <!-- Products / Coverage & Completeness -->
     <section>
       <div class="grid">
         <article class="card">
-          <img src="images/cap5.jpg" alt="OKC Thunder">
-          <h3>OKC Thunder</h3>
-          <p>$34.99 — Adjustable fit, blue & white.</p>
+          <img src="images/cap5.jpg" alt="OKC Thunder Cap">
+          <h3>OKC Thunder Adjustable Cap</h3>
+          <p>Price: $34.99</p>
+          <p>Features: Adjustable fit, blue & white design, breathable material.</p>
         </article>
 
         <article class="card">
           <img src="images/cap2.jpg" alt="Bulls Flat Brim Cap">
           <h3>Bulls Flat Brim Cap</h3>
-          <p>$32.99 — Bold red design with embroidery
+          <p>Price: $32.99</p>
+          <p>Features: Bold red design with embroidery, structured fit, one size fits most.</p>
+        </article>
 
+        <article class="card">
+          <img src="images/cap3.jpg" alt="Lakers Snapback">
+          <h3>Lakers Snapback Cap</h3>
+          <p>Price: $35.99</p>
+          <p>Features: Purple & gold colors, adjustable snapback, lightweight material.</p>
+        </article>
 
+        <article class="card">
+          <img src="images/cap4.jpg" alt="Celtics Beanie">
+          <h3>Celtics Beanie</h3>
+          <p>Price: $29.99</p>
+          <p>Features: Green knit beanie, warm and cozy, one size fits most.</p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> NBA Fan Store — Project for class</p>
+      <p style="font-size:0.9em;">All products are inspired by NBA merchandise; not officially licensed.</p>
+    </footer>
+  </main>
+
+<script>
+  const nav = document.getElementById('mainNav');
+  const toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', ()=> nav.classList.toggle('open'));
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
