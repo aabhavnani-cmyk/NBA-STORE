@@ -1,16 +1,17 @@
-<HTML><H1>Javascript      search</H1>
-    <SCRIPT      LANGUAGE="javascript">
-    var      english=["water","house","book","university","car","computer"];
-    var      spanish=["aqua","casa","libro","universidad","caro","computador"];
-    var      result = 0;
-    var      searchword = prompt("Enter english word to translate: ");
-    for(i=0;i<english.length;i++){
-    if(english[i]==searchword){
-    document.writeln("Spanish word:      "+spanish[i]);
-    result = 1; }//IF
-    }// FOR
-    if(result==0)
-    document.writeln("Sorry, NO MATCH      for: " + searchword);
-    </SCRIPT>      </HTML>
-console.log
-alert("JavaScript is working!")
+<head>
+    <title>JavaScript Test</title>
+    </head>
+
+<body>
+    <h1>What Day Is It?</h1>
+    <This page uses JavaScript.</p>
+    <p>
+    <script type="text/javascript">
+        var currentDate = new Date ()
+        var message = "The current date is: " + currentDate.to
+        document.write (message)
+    </script>
+    </p>
+</body>
+
+</html>
