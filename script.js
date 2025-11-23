@@ -13,3 +13,4 @@
     document.writeln("Sorry, NO MATCH      for: " + searchword);
     </SCRIPT>      </HTML>
 console.log
+alert("JavaScript is working!")
