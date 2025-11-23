@@ -12,3 +12,4 @@
     if(result==0)
     document.writeln("Sorry, NO MATCH      for: " + searchword);
     </SCRIPT>      </HTML>
+console.log
