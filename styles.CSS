@@ -49,16 +49,4 @@ footer { text-align: center; padding: 14px 6px; color: #666; font-size: 0.9rem; 
 <link rel="stylesheet" href="styles.CSS">
 
 
-.cgi-section {
-  text-align: center;
-  margin: 60px auto;
-}
 
-.cgi-section img {
-  width: 250px;
-  transition: transform 0.3s ease;
-}
-
-.cgi-section img:hover {
-  transform: scale(1.1);
-}
